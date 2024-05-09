@@ -4,6 +4,8 @@
 
 We adapted this repo from the hovernet repo: https://github.com/vqdang/hover_net
 
+For the MASI lab, example data, weights, paths etc. have been set up.
+
 If you are in MASI lab, to perform inference on an example whole slide image of virtual H&E, you can just run:
 
 ```bash run_wsi_vhe.sh```
