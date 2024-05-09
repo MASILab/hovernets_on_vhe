@@ -2,6 +2,7 @@
 
 ![Description of Image](./seg_2.png)
 
+We adapted this repo from the hovernet repo: https://github.com/vqdang/hover_net
 
 If you are in MASI lab, to perform inference on an example whole slide image of virtual H&E, you can just run:
 
@@ -16,7 +17,7 @@ If you are outside of the lab, you can change the paths in those scripts to matc
 # Citations
 If you use this repo, please cite:
 
-- the relevant papers from the source repo, (we adapted this code) : https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/tree/master
+- the relevant papers from the source repo, (we adapted this code) : https://github.com/vqdang/hover_net
 - "Data-driven Nucleus Subclassification on Colon H&E using Style-transferred Digital Pathology"
 
 # Data format
