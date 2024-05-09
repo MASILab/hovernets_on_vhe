@@ -1,6 +1,6 @@
 # Perform instance segmentation on virtual H&E using pretrained hovernets that only perform instance segmentation (no classification)
 
-![Description of Image](./seg.png)
+![Description of Image](./seg_2.png)
 
 
 If you are in MASI lab, to perform inference on an example whole slide image of virtual H&E, you can just run:
