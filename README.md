@@ -16,7 +16,7 @@ If you are outside of the lab, you can change the paths in those scripts to matc
 # Citations
 If you use this repo, please cite:
 
-- the relevant papers from the source repo, which we adapted this code from: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/tree/master
+- the relevant papers from the source repo, (we adapted this code) : https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/tree/master
 - "Data-driven Nucleus Subclassification on Colon H&E using Style-transferred Digital Pathology"
 
 # Data format
@@ -24,4 +24,5 @@ Please follow the original hovernet repo for guiding how to format data.
 
 # Pretrained weights
 The weights for 5 folds of trained hovernets for nucleus instance segmentation on virtual H&E can be found here:
+
 **TODO**
