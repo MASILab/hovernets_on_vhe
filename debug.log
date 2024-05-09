@@ -1,0 +1,161 @@
+|2024-05-09|13:19:01.334| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:19:03.835| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:19:06.090| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:19:08.486| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:19:10.565| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:19:12.787| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:19:15.145| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:19:17.315| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:19:19.636| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:19:22.017| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:19:54.187| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:20:00.553| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:20:03.042| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:20:05.274| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:20:07.525| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:20:10.152| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:20:12.470| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:20:14.715| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:20:30.540| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:20:44.369| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:20:47.452| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:20:50.229| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:20:53.225| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:21:30.321| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:21:49.776| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:23:09.346| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:23:13.948| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:24:06.228| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:26:06.931| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:26:35.935| [INFO] ................ Process: GCA003ACA
+|2024-05-09|13:26:38.608| [INFO] ........ Preparing Input Output Placement: 2.6722068319795653
+|2024-05-09|13:27:03.695| [ERROR] Crash
+Traceback (most recent call last):
+  File "/home/remedilw/code/temporary/hovernet_instance_segmentation_on_virtual_he/infer/wsi.py", line 746, in process_wsi_list
+    self.process_single_file(wsi_path, msk_path, self.output_dir)
+  File "/home/remedilw/code/temporary/hovernet_instance_segmentation_on_virtual_he/infer/wsi.py", line 550, in process_single_file
+    self.__get_raw_prediction(chunk_info_list, patch_info_list)
+  File "/home/remedilw/code/temporary/hovernet_instance_segmentation_on_virtual_he/infer/wsi.py", line 374, in __get_raw_prediction
+    chunk_patch_info_list[:, 0, 0], pbar_desc
+  File "/home/remedilw/code/temporary/hovernet_instance_segmentation_on_virtual_he/infer/wsi.py", line 289, in __run_model
+    sample_output_list = self.run_step(sample_data_list)
+  File "/home/remedilw/code/temporary/hovernet_instance_segmentation_on_virtual_he/infer/base.py", line 74, in <lambda>
+    self.run_step = lambda input_batch: run_step(input_batch, net)
+  File "/home/remedilw/code/temporary/hovernet_instance_segmentation_on_virtual_he/models/hovernet/run_desc.py", line 182, in infer_step
+    patch_imgs_gpu = patch_imgs.to("cuda").type(torch.float32)  # to NCHW
+RuntimeError: CUDA error: no kernel image is available for execution on the device
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+|2024-05-09|13:27:06.843| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:27:15.141| [INFO] ................ Process: GCA003ACA
+|2024-05-09|13:27:17.028| [INFO] ........ Preparing Input Output Placement: 1.885432811017381
+|2024-05-09|13:27:41.458| [ERROR] Crash
+Traceback (most recent call last):
+  File "/home/remedilw/code/temporary/hovernet_instance_segmentation_on_virtual_he/infer/wsi.py", line 746, in process_wsi_list
+    self.process_single_file(wsi_path, msk_path, self.output_dir)
+  File "/home/remedilw/code/temporary/hovernet_instance_segmentation_on_virtual_he/infer/wsi.py", line 550, in process_single_file
+    self.__get_raw_prediction(chunk_info_list, patch_info_list)
+  File "/home/remedilw/code/temporary/hovernet_instance_segmentation_on_virtual_he/infer/wsi.py", line 374, in __get_raw_prediction
+    chunk_patch_info_list[:, 0, 0], pbar_desc
+  File "/home/remedilw/code/temporary/hovernet_instance_segmentation_on_virtual_he/infer/wsi.py", line 289, in __run_model
+    sample_output_list = self.run_step(sample_data_list)
+  File "/home/remedilw/code/temporary/hovernet_instance_segmentation_on_virtual_he/infer/base.py", line 74, in <lambda>
+    self.run_step = lambda input_batch: run_step(input_batch, net)
+  File "/home/remedilw/code/temporary/hovernet_instance_segmentation_on_virtual_he/models/hovernet/run_desc.py", line 182, in infer_step
+    patch_imgs_gpu = patch_imgs.to("cuda").type(torch.float32)  # to NCHW
+RuntimeError: CUDA error: no kernel image is available for execution on the device
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+|2024-05-09|13:27:43.992| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:27:51.107| [INFO] ................ Process: GCA003ACA
+|2024-05-09|13:27:53.006| [INFO] ........ Preparing Input Output Placement: 1.8979717789916322
+|2024-05-09|13:28:26.127| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:28:35.714| [INFO] ................ Process: GCA003ACA
+|2024-05-09|13:28:37.610| [INFO] ........ Preparing Input Output Placement: 1.8950600490206853
+|2024-05-09|13:32:10.868| [INFO] ........ Inference Time: 213.25740458499058
+|2024-05-09|13:32:40.516| [INFO] ........ Total Post Proc Time: 29.64728132399614
+|2024-05-09|13:32:40.857| [ERROR] Crash
+Traceback (most recent call last):
+  File "/home/remedilw/code/temporary/hovernet_instance_segmentation_on_virtual_he/infer/wsi.py", line 746, in process_wsi_list
+    self.process_single_file(wsi_path, msk_path, self.output_dir)
+  File "/home/remedilw/code/temporary/hovernet_instance_segmentation_on_virtual_he/infer/wsi.py", line 707, in process_single_file
+    self.__save_json(json_path, self.wsi_inst_info, mag=self.proc_mag)
+  File "/home/remedilw/code/temporary/hovernet_instance_segmentation_on_virtual_he/infer/base.py", line 92, in __save_json
+    with open(path, "w") as handle:
+FileNotFoundError: [Errno 2] No such file or directory: '/nfs/masi/remedilw/paper_journal_nucleus_subclassification/instance_segmentation/example_data/example_output/json/GCA003ACA.json'
+|2024-05-09|13:32:44.180| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:32:48.821| [INFO] ................ Process: GCA003ACA
+|2024-05-09|13:32:50.705| [INFO] ........ Preparing Input Output Placement: 1.8828492450120393
+|2024-05-09|13:45:46.963| [INFO] .... Detect #GPUS: 1
+|2024-05-09|13:45:54.886| [INFO] ................ Process: GCA003ACA
+|2024-05-09|13:45:56.780| [INFO] ........ Preparing Input Output Placement: 1.8935939689981751
+|2024-05-09|13:49:24.495| [INFO] ........ Inference Time: 207.7142797090055
+|2024-05-09|13:49:47.559| [INFO] ........ Total Post Proc Time: 23.06285632000072
+|2024-05-09|13:49:48.852| [INFO] ........ Save Time: 1.292495088011492
+|2024-05-09|13:49:48.852| [INFO] ................ Finish
+|2024-05-09|14:16:25.269| [INFO] .... Detect #GPUS: 1
+|2024-05-09|14:17:13.708| [INFO] .... Detect #GPUS: 1
+|2024-05-09|14:18:37.751| [INFO] ........................ Done Assembling consep_10-0000_fake_B
+|2024-05-09|14:18:37.779| [INFO] ........................ Done Assembling consep_11-0003_fake_B
+|2024-05-09|14:18:37.814| [INFO] ........................ Done Assembling consep_1-0001_fake_B
+|2024-05-09|14:18:37.835| [INFO] ........................ Done Assembling consep_12-0000_fake_B
+|2024-05-09|14:18:37.866| [INFO] ........................ Done Assembling consep_11-0000_fake_B
+|2024-05-09|14:18:37.895| [INFO] ........................ Done Assembling consep_12-0002_fake_B
+|2024-05-09|14:18:37.927| [INFO] ........................ Done Assembling consep_11-0001_fake_B
+|2024-05-09|14:18:37.956| [INFO] ........................ Done Assembling consep_10-0002_fake_B
+|2024-05-09|14:18:37.989| [INFO] ........................ Done Assembling consep_11-0002_fake_B
+|2024-05-09|14:18:38.020| [INFO] ........................ Done Assembling consep_10-0003_fake_B
+|2024-05-09|14:18:38.050| [INFO] ........................ Done Assembling consep_12-0001_fake_B
+|2024-05-09|14:18:38.080| [INFO] ........................ Done Assembling consep_1-0003_fake_B
+|2024-05-09|14:18:38.109| [INFO] ........................ Done Assembling consep_10-0001_fake_B
+|2024-05-09|14:18:38.140| [INFO] ........................ Done Assembling consep_1-0000_fake_B
+|2024-05-09|14:18:38.172| [INFO] ........................ Done Assembling consep_1-0002_fake_B
+|2024-05-09|14:18:38.202| [INFO] ........................ Done Assembling consep_12-0003_fake_B
+|2024-05-09|14:18:38.233| [INFO] ........................ Done Assembling consep_13-0000_fake_B
+|2024-05-09|14:18:38.261| [INFO] ........................ Done Assembling consep_13-0001_fake_B
+|2024-05-09|14:18:38.347| [INFO] ........................ Done Assembling consep_13-0003_fake_B
+|2024-05-09|14:18:38.375| [INFO] ........................ Done Assembling consep_13-0002_fake_B
+|2024-05-09|14:18:38.403| [INFO] ........................ Done Assembling consep_14-0000_fake_B
+|2024-05-09|14:18:38.433| [INFO] ........................ Done Assembling consep_14-0002_fake_B
+|2024-05-09|14:18:38.457| [INFO] ........................ Done Assembling consep_15-0000_fake_B
+|2024-05-09|14:18:38.489| [INFO] ........................ Done Assembling consep_14-0001_fake_B
+|2024-05-09|14:18:38.512| [INFO] ........................ Done Assembling consep_15-0001_fake_B
+|2024-05-09|14:18:38.535| [INFO] ........................ Done Assembling consep_15-0002_fake_B
+|2024-05-09|14:18:38.563| [INFO] ........................ Done Assembling consep_14-0003_fake_B
+|2024-05-09|14:18:38.593| [INFO] ........................ Done Assembling consep_15-0003_fake_B
+|2024-05-09|14:18:38.623| [INFO] ........................ Done Assembling consep_16-0000_fake_B
+|2024-05-09|14:18:38.650| [INFO] ........................ Done Assembling consep_2-0000_fake_B
+|2024-05-09|14:18:38.676| [INFO] ........................ Done Assembling consep_16-0003_fake_B
+|2024-05-09|14:18:38.702| [INFO] ........................ Done Assembling consep_16-0001_fake_B
+|2024-05-09|14:18:38.732| [INFO] ........................ Done Assembling consep_16-0002_fake_B
+|2024-05-09|14:18:38.765| [INFO] ........................ Done Assembling consep_2-0001_fake_B
+|2024-05-09|14:18:38.796| [INFO] ........................ Done Assembling consep_2-0002_fake_B
+|2024-05-09|14:18:38.829| [INFO] ........................ Done Assembling consep_2-0003_fake_B
+|2024-05-09|14:18:38.853| [INFO] ........................ Done Assembling consep_3-0000_fake_B
+|2024-05-09|14:18:38.876| [INFO] ........................ Done Assembling consep_3-0001_fake_B
+|2024-05-09|14:18:38.900| [INFO] ........................ Done Assembling consep_3-0002_fake_B
+|2024-05-09|14:18:38.921| [INFO] ........................ Done Assembling consep_4-0001_fake_B
+|2024-05-09|14:18:38.945| [INFO] ........................ Done Assembling consep_4-0000_fake_B
+|2024-05-09|14:18:38.969| [INFO] ........................ Done Assembling consep_4-0002_fake_B
+|2024-05-09|14:18:38.999| [INFO] ........................ Done Assembling consep_3-0003_fake_B
+|2024-05-09|14:18:39.025| [INFO] ........................ Done Assembling consep_5-0000_fake_B
+|2024-05-09|14:18:39.044| [INFO] ........................ Done Assembling consep_4-0003_fake_B
+|2024-05-09|14:18:39.070| [INFO] ........................ Done Assembling consep_5-0001_fake_B
+|2024-05-09|14:18:39.109| [INFO] ........................ Done Assembling consep_5-0003_fake_B
+|2024-05-09|14:18:39.142| [INFO] ........................ Done Assembling consep_6-0000_fake_B
+|2024-05-09|14:18:39.171| [INFO] ........................ Done Assembling consep_5-0002_fake_B
+|2024-05-09|14:18:39.196| [INFO] ........................ Done Assembling consep_6-0003_fake_B
+|2024-05-09|14:18:39.225| [INFO] ........................ Done Assembling consep_6-0001_fake_B
+|2024-05-09|14:18:39.252| [INFO] ........................ Done Assembling consep_6-0002_fake_B
+|2024-05-09|14:18:39.272| [INFO] ........................ Done Assembling consep_7-0001_fake_B
+|2024-05-09|14:18:39.295| [INFO] ........................ Done Assembling consep_7-0002_fake_B
+|2024-05-09|14:18:39.323| [INFO] ........................ Done Assembling consep_7-0003_fake_B
+|2024-05-09|14:18:39.352| [INFO] ........................ Done Assembling consep_7-0000_fake_B
+|2024-05-09|14:18:39.384| [INFO] ........................ Done Assembling consep_8-0000_fake_B
+|2024-05-09|14:18:39.409| [INFO] ........................ Done Assembling consep_8-0003_fake_B
+|2024-05-09|14:18:39.436| [INFO] ........................ Done Assembling consep_9-0000_fake_B
+|2024-05-09|14:18:39.459| [INFO] ........................ Done Assembling consep_9-0002_fake_B
+|2024-05-09|14:18:39.492| [INFO] ........................ Done Assembling consep_8-0001_fake_B
+|2024-05-09|14:18:39.515| [INFO] ........................ Done Assembling consep_9-0001_fake_B
+|2024-05-09|14:18:39.546| [INFO] ........................ Done Assembling consep_8-0002_fake_B
+|2024-05-09|14:18:39.571| [INFO] ........................ Done Assembling consep_9-0003_fake_B
