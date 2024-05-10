@@ -1,6 +1,7 @@
 # Perform instance segmentation on virtual H&E using pretrained hovernets that only perform instance segmentation (no classification)
 
 ![Description of Image](./seg_2.png)
+
 This image is an example of a CoNIC patch (after style transfer to our virtual H&E style using https://github.com/MASILab/he_stain_translation_cyclegan).
 The segmentation was performed using the patch/tile approach given below for CoNIC.
 The predicted instance segmentation of the nuclei is shown as contours, but the output is actually a JSON file
