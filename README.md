@@ -3,7 +3,7 @@
 ![Description of Image](./seg_2.png)
 
 # Note:
-The weights are not currently public. The weights are only accessible to members of the MASI Lab.
+The pretrained weights are not currently public. The pretrained weights are only accessible to members of the MASI Lab.
 
 This image is an example of a CoNIC patch (after style transfer to our virtual H&E style using https://github.com/MASILab/he_stain_translation_cyclegan).
 The segmentation was performed using the patch/tile approach given below for CoNIC.
