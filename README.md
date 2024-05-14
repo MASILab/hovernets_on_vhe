@@ -2,6 +2,9 @@
 
 ![Description of Image](./seg_2.png)
 
+# Note:
+The weights are not currently public. The weights are only accessible to members of the MASI Lab.
+
 This image is an example of a CoNIC patch (after style transfer to our virtual H&E style using https://github.com/MASILab/he_stain_translation_cyclegan).
 The segmentation was performed using the patch/tile approach given below for CoNIC.
 The predicted instance segmentation of the nuclei is shown as contours, but the output is actually a JSON file
@@ -32,4 +35,7 @@ Please follow the original hovernet repo for guiding how to format data.
 # Pretrained weights
 The weights for 5 folds of trained hovernets for nucleus instance segmentation on virtual H&E can be found here:
 
-**TODO**
+**MASI Lab:** ```/nfs/masi/remedilw/paper_journal_nucleus_subclassification/nucleus_subclassification/weights```
+
+**Public:** Not currently available
+
