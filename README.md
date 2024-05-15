@@ -35,7 +35,7 @@ Please follow the original hovernet repo for guiding how to format data.
 # Pretrained weights
 The weights for 5 folds of trained hovernets for nucleus instance segmentation on virtual H&E can be found here:
 
-**MASI Lab:** ```/nfs/masi/remedilw/paper_journal_nucleus_subclassification/nucleus_subclassification/weights```
+**MASI Lab:** ```/nfs/masi/remedilw/paper_journal_nucleus_subclassification/instance_segmentation```
 
 **Public:** Not currently available
 
